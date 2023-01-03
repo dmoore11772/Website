@@ -1,0 +1,108 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+header{
+    background-color: lightslategray;
+    position: relative;
+    border: 2px solid #002649;
+}
+
+.wrapper{
+    display: flex;
+    max-height: 120px;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    position: relative;
+    float: left;
+}
+
+nav{
+    text-align: center;
+    margin: 5px 10px 5px 10px;
+}
+
+nav li{
+    font-size: 30px;
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 15px;
+    border: 1px solid #002649;
+    border-radius: 5px;
+    background-color: #002649;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+  color: grey;
+}
+
+.scroller-wrapper{
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+
+.scroller{
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: scroll1 30s linear infinite;
+    margin: 10px auto;
+    border-bottom: 2px solid #002649;
+    padding-bottom: 8px;
+  }
+  
+  .scroller p{
+    display: inline-block;
+  }
+
+@keyframes scroll1{
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  #roster{
+    float: right;
+    border: 3px solid #002649;
+    margin-top: -60px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  #roster th{
+    border-bottom: 2px solid #002649;
+  }
+
+  #roster th, td{
+    padding: 8px;
+  }
+
+  #roster tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+
+  #roster tr{
+    border: 1px solid #002649;
+  }
