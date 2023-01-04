@@ -1,4 +1,4 @@
-fetch('https://www.example.com/nba-schedule')
+fetch('https://theathletic.com/nba/team/grizzlies/schedule/')
   .then(response => response.json())
   .then(schedule => {
     for (const game of schedule) {
