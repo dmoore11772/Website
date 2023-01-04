@@ -38,22 +38,26 @@
         </div>
     </div>
     <div id="schedule">
-        <table>
-            <tr id="roster-nav">
-                <th>Date</th>
-                <th>Opponent</th>
-                <th>Time</th>
-                <th>Watch</th>
-                <th>Result</th>
-            </tr>
+        <table id="schedule-table">
             <tr>
-                <td>11/19</td>
-                <td>NY Knicks</td>
-                <td>6:30 PM</td>
-                <td>Bally</td>
-                <td>W 115-112</td>
+              <th>Date</th>
+              <th>Matchup</th>
+              <th>Result</th>
+              <th>Time</th>
+              <th>TV</th>
             </tr>
         </table>
+        <form id="filter-form">
+            <label for="team-select">Team:</label>
+            <select id="team-select">
+              <option value="all">All Teams</option>
+              <option value="hawks">Atlanta Hawks</option>
+              <!-- other team options -->
+            </select>
+            <br>
+            <input type="checkbox" id="home-games-only" value="home">
+            <label for="home-games-only">Home Games Only</label>
+        </form>          
     </div>
     <div>
         <table id= "roster">
